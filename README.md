@@ -1,17 +1,17 @@
 # diffcov
 
-Show whether the lines in your **current diff** are covered by tests, without converting the whole report by untouched files.
+Show whether the lines in your **current diff** are covered by tests, without converting the full report by untouched files.
 
 ## About
 
-`diffcov` ships a small CLI that can render coverage for the exact changed lines between two git refs. By combining a parsed patch with Python's `coverage` data, it isolates the signal that matters during code review and local development.
+`diffcov` ships a small CLI that renders coverage for the exact changed lines between two git refs. By combining a parsed patch with `coverage` data, it isolates the signal that matters during code review and local development.
 
 ## Features
 
 - Base-diff aware reporting, scoped to added lines
 - Per-file and overall diff coverage percentage
-- Runs in the README's installed environment via `pyproject.toml`
-- Built with typed data structures and Rich output
+- Rich table output in the terminal
+- Built with typed data structures
 
 ## Installation
 
@@ -48,10 +48,10 @@ diffcov/
     cli.py
     coverage_report.py
     diff.py
-  tests/test_diffcov.py
+  tests/
   pyproject.toml
 ```
 
 ## License
 
-diffcov is released under the [MIT License](./LICENSE).
+[diffcov](https://github.com/ethancarter-ai/diffcov) is released under the MIT License.
