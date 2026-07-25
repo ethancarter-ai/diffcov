@@ -48,13 +48,9 @@ diffcov/
     cli.py
     coverage_report.py
     diff.py
-  tests/
+  tests/test_diffcov.py
   pyproject.toml
 ```
-
-## Tags / keywords
-
-python, coverage, git-diff, developer-tools, cli, testing
 
 ## License
 
