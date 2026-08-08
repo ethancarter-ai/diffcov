@@ -13,7 +13,6 @@ src/diffcov.egg-info/
 # Coverage / tests
 .coverage
 htmlcov/
-.coverage.*
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
@@ -29,7 +28,3 @@ node_modules/
 *.db
 dev.db
 .DS_Store
-
-# Agent metadata
-AGENTS.md
-CLAUDE.md
