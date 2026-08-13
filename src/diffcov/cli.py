@@ -149,7 +149,3 @@ def _print_report(rows: list[FileCoverage], summary: dict) -> None:
         f"overall {summary['diff_coverage_pct']:.1f}%"
     )
     console.print(f"[bold]{summary_text}[/bold]")
-
-
-if __name__ == "__main__":
-    app()
