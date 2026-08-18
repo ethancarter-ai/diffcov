@@ -68,9 +68,3 @@ def parse_diff(diff_text: str) -> list[dict]:
     return entries
 
 
-def changed_paths(repo_root: Path) -> Iterable[Path]:
-    repo_root = Path(repo_root).resolve()
-    for path in repo_root.rglob("*"):
-        if path.is_file() and ".git" in path.parts:
-            continue
-        yield path
