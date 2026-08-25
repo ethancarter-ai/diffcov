@@ -52,6 +52,10 @@ diffcov/
   pyproject.toml
 ```
 
+## Repository
+
+Source: https://github.com/ethancarter-ai/diffcov
+
 ## License
 
-[diffcov](https://github.com/ethancarter-ai/diffcov) is released under the MIT License.
+This project is released under the MIT License.
