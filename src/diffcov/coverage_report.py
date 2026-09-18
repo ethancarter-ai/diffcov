@@ -4,7 +4,6 @@ from dataclasses import dataclass
 @dataclass(frozen=True)
 class FileCoverage:
     file: str
-    diff_lines: list[str]
     covered_lines: set[int]
     covered_in_diff: int
     diff_total: int

@@ -9,6 +9,7 @@ description = "Show coverage for your current git diff only."
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Ethan Carter" }]
+keywords = ["coverage", "diff", "git", "testing", "code-review", "coverage-report"]
 requires-python = ">=3.10"
 dependencies = [
     "typer>=0.9",

@@ -52,7 +52,6 @@ def report(
         rows.append(
             FileCoverage(
                 file=entry["path"],
-                diff_lines=[],
                 covered_lines=covered_lines,
                 covered_in_diff=covered_in_diff,
                 diff_total=diff_total,

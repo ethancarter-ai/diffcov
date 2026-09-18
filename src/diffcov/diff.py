@@ -1,11 +1,8 @@
 import re
 from pathlib import Path
-from typing import Iterable
 
 
 RE_PLUS_FILE = re.compile(r"^\+\+\+\s+b/(?P<path>[^\t]+)")
-RE_PLUS_LINE = re.compile(r"^\+(?!\+)(?P<line>.+)$")
-RE_MINUS_LINE = re.compile(r"^-(?!-)(?P<line>.+)$")
 RE_HUNK = re.compile(r"^@@ .+ \+(\d+),?(?P<length>\d+)? .*$")
 
 
@@ -54,8 +51,6 @@ def parse_diff(diff_text: str) -> list[dict]:
             continue
 
         if line.startswith("-"):
-            if current is not None:
-                current.setdefault("lint", []).append(line[1:])
             continue
 
         if current is not None:
