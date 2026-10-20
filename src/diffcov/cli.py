@@ -115,7 +115,7 @@ def _coverage_from_module(repo_root: Path, module_root: Path) -> dict[str, set[i
                 continue
             for filename in getattr(cov_obj, "data", {}).measured_files() or []:
                 coverage = cov_obj.analysis2(filename) or ([], [], [])
-                _summary, executable, _missing = coverage
+                _summary, executable, _missing, _excluded, _err = coverage
                 covered = {int(ln) for ln in executable if str(ln).isdigit()}
                 coverage_data[filename] = coverage_data.get(filename, set()) | covered
     except Exception:
