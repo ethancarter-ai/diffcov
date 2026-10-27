@@ -22,8 +22,4 @@ htmlcov/
 .vscode/
 
 # Project-specific
-.next/
-node_modules/
-*.db
-dev.db
 .DS_Store
